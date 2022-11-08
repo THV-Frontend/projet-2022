@@ -7,7 +7,10 @@ header{
     background-size: cover;
 }
 
-
+body {
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Roboto', sans-serif;
+}
 nav {
     display: flex;
 	flex-direction: row;
@@ -30,8 +33,27 @@ ul, .icon-4{
     justify-content: space-around;
 }
 
-ul {
-    list-style-type: none;
+nav ul {  
+    list-style-type: none; 
+}
+
+nav a {
+    text-decoration: none;
+    color: black
+}
+
+span {
+    position: absolute;
+    top: 0;
+    background-color: #14462d;
+    border-radius: 50%;
+    color: white;
+    padding: 3px;
+    font-size: 5px;   
+}
+
+.fa-cart-shopping {
+    position: relative;
 }
 
 li {
@@ -42,7 +64,7 @@ li {
 margin: 10px;
 }
 
-i {
+.icon-4 i {
     border: 1px solid black;
     border-radius: 50%;
     padding: 5px;
@@ -64,7 +86,7 @@ h1 {
     font-size: 55px;
 }
 
-h4 {
+.titre h4 {
     font-size: 25px;
     font-family: 'Abril Fatface', cursive;
     font-family: 'Roboto', sans-serif;
@@ -94,64 +116,116 @@ button:last-child {
 	align-items: center;
 	align-content: space-evenly;
     margin: 100px 100px 100px 100px;
-    border: solid black;
 }
 
 .legume {
+    position: relative;
     background-color: #92ddd8;
     margin-right: 30px;
-    width: 15em;
+    width: 18em;
     height: 15em;
     text-align: left;
     padding: 30px;
     color: white;
-    position: relative;
+}
+
+.legume img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+ .legume-1 {
+    padding-top: 40px;
+    
+ }
+.boisson img, .santé img {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
 }
 
 .boisson {
+    position: relative;
     background-color:#fb9823 ;
     margin-right: 30px;
     width: 15em;
     height: 15em;
     text-align: left;
     padding: 30px;
-    color: white;
-    position: relative;
+    color: white; 
+   padding-top: 30px;
 }
 
+.boisson-1 {
+    padding-top: 40px;
+}
 .santé {
+    position: relative;
     background-color: #a0cb23;
     margin-right: 30px;
     width: 15em;
     height: 15em;
-    text-align: left r;
+    text-align: left ;
     padding: 30px;
     color: white;
     position: relative;
 }
 
-.legume img {
-position: absolute;
+.sante-1 {
+    padding-top: 40px; 
 }
-
 .titre-2 {
  text-align: center;
 }
 
 .container-5 {
     display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border: solid blue;
+    margin-bottom: 30px;
 }
 
 .container-6 {
     display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border: solid rgb(255, 0, 0);
+    margin-bottom: 30px;
 }
+
+.beef , .fraises, .milel, .lait, .mangue, .broccoli {
+    background-color: #f6fafb;
+    margin:50px; 
+    text-align: center; 
+}
+
+.container-6 .fa-heart {
+    position: absolute;
+    color: rgb(180, 180, 180);
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 10px;  
+}
+
+.container-6 {
+    position: relative;
+}
+
+ .broccoli {
+    border: 1px solid #a0cb23;
+    padding: 20px;
+ }
+
+ .beef {
+    padding: 20px; 
+ }
+
+ .titre-2 h5 {
+    color: #a0cb23;
+ }
