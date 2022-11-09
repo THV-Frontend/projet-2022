@@ -7,10 +7,11 @@ header{
     background-size: cover;
 }
 
+
 body {
-    font-family: 'Abril Fatface', cursive;
     font-family: 'Roboto', sans-serif;
 }
+
 nav {
     display: flex;
 	flex-direction: row;
@@ -24,6 +25,16 @@ nav {
     width: auto;
     height: auto;
 }
+
+
+header .image {
+    position: absolute;
+    left: -5em;
+    top: 0;
+}
+
+
+
 ul, .icon-4{
     display: flex;
 	flex-direction: row;
@@ -179,42 +190,47 @@ button:last-child {
 }
 
 .container-5 {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    border: solid blue;
-    margin-bottom: 30px;
 }
 
-.container-6 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    border: solid rgb(255, 0, 0);
-    margin-bottom: 30px;
-}
-
-.beef , .fraises, .milel, .lait, .mangue, .broccoli {
-    background-color: #f6fafb;
-    margin:50px; 
-    text-align: center; 
-}
-
-.container-6 .fa-heart {
-    position: absolute;
-    color: rgb(180, 180, 180);
-    background-color: white;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 10px;  
+.container-5 img {
+   max-height: 300em ;
 }
 
 .container-6 {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 30px;
+}
+
+
+.beef , .fraises, .miel, .lait, .mangue, .broccoli {
+    position: relative;
+    background-color: #f6fafb;
+    margin: 10px; 
+    text-align: center; 
+    padding-bottom: 20px;
+}
+
+
+.container-5 img {
+    height: 8em;
+    width: 13em;
+}
+
+.container-6 img {
+    height: 10em;
+    width: 8em;
+    padding: 25px 60px 2px;
 }
 
  .broccoli {
@@ -226,6 +242,73 @@ button:last-child {
     padding: 20px; 
  }
 
+ .hot button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(207, 62, 62);
+ }
+ .fraises {
+    padding: 20px;
+ }
+
  .titre-2 h5 {
     color: #a0cb23;
  }
+.container-5 i.fa-solid:first-of-type{
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    color: grey;
+    font-size: 12px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+    border-color: white;
+}
+
+.container-5 .broccoli i.fa-solid:first-of-type{
+    color: white;
+    background-color: #a0cb23;
+}
+.container-6 i.fa-solid:first-of-type{
+    position: absolute; 
+    top: 3px;
+    right: 8px;
+    color: grey;
+    margin: 10px;
+    font-size: 12px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+    border-color: white;
+}
+
+
+ .container-5 .fa-solid, .container-6 .fa-solid{
+    color: rgb(255, 231, 17);
+ }
+
+ .container-5 .fa-regular, .container-6 .fa-regular{
+    color: gray;
+ }
+
+ s {
+    color: gray;
+ }
+
+footer {
+    position: relative;
+    background-color: #a0cb23;
+}
+
+ .panier {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
